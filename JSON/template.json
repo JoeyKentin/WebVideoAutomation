@@ -1,0 +1,38 @@
+{
+    "template": {
+        "src": "file:///E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/template.aep",
+        "composition": "Main"
+    },
+    "assets": [
+        {
+            "type": "data",
+            "layerName": "name",
+            "property": "Source Text",
+            "value": "June"
+        },
+        {
+            "src":"https://images.unsplash.com/photo-1682687220499-d9c06b872eee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "type": "image",
+            "layerName": "background"
+        },
+        {
+            "src": "file:///E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/Assets/Audio/audio_002.mp3",
+            "type": "audio",
+            "layerName": "audio"
+        }
+    ],
+    "actions": {
+        "postrender": [
+            {
+                "module": "@nexrender/action-encode",
+                "preset": "mp4",
+                "output": "encoded.mp4"
+            },
+            {
+                "module": "@nexrender/action-copy",
+                "input": "encoded.mp4",
+                "output": "E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/Export/prototype_002.mp4"
+            }
+        ]
+    }
+}
