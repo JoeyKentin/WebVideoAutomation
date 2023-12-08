@@ -6,9 +6,15 @@
     "assets": [
         {
             "type": "data",
-            "layerName": "name",
+            "layerName": "title",
             "property": "Source Text",
-            "value": "June"
+            "value": "Not Joey"
+        },
+        {
+            "type": "data",
+            "layerName": "artist",
+            "property": "Source Text",
+            "value": "Joey"
         },
         {
             "src":"https://images.unsplash.com/photo-1682687220499-d9c06b872eee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -16,7 +22,7 @@
             "layerName": "background"
         },
         {
-            "src": "file:///E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/Assets/Audio/audio_002.mp3",
+            "src": "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3",
             "type": "audio",
             "layerName": "audio"
         }
@@ -31,7 +37,7 @@
             {
                 "module": "@nexrender/action-copy",
                 "input": "encoded.mp4",
-                "output": "E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/Export/prototype_002.mp4"
+                "output": "E:/School/23-24/ExpertLab/6-WebVideoAutomation/WaveformViz/WebVideoAutomation/Export/Export_001.mp4"
             }
         ]
     }
